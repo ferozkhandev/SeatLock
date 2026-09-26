@@ -1,0 +1,9 @@
+HELP.md
+.gradle
+.idea
+
+### VS Code ###
+.vscode/
+
+#### Mac ###
+.DS_Store

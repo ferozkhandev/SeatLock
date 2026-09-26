@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: catalog_service
+  profiles:
+    active: dev
+  jpa:
+    hibernate:
+      ddl-auto: validate

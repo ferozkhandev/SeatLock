@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5534/catalog_db
+    username: postgres
+    password: postgres
+  flyway:
+    enabled: true
+
+server.port: 8181
