@@ -1,0 +1,2 @@
+rootProject.name = 'seatlock'
+include 'shared-events', 'catalog-service'
