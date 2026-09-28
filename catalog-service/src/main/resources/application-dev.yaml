@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5534/catalog_db
-    username: postgres
-    password: postgres
+    username: catalog_user
+    password: catalog-db
   flyway:
     enabled: true
 
