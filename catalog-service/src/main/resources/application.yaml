@@ -1,8 +1,8 @@
 spring:
   application:
     name: catalog-service
-  profiles:
-    active: dev
+  flyway:
+    enabled: true
   jpa:
     hibernate:
       ddl-auto: validate

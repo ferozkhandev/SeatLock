@@ -1,0 +1,60 @@
+# Gradle
+**/.gradle/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+gradle-app.setting
+.gradletasknamecache
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+.gitignore
+.gitattributes
+.github/
+
+# Documentation
+README.md
+*.md
+docs/
+
+# CI/CD
+.dockerignore
+Dockerfile
+docker-compose*.yml
+.gitlab-ci.yml
+Jenkinsfile
+infra/
+
+# Test and Coverage
+**/test/
+**/*Test.java
+**/*Tests.java
+coverage/
+test-results/
+.junit/
+
+# Logs and Temp
+*.log
+logs/
+temp/
+tmp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+.env
+.env.dev
+.env.local

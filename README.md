@@ -24,3 +24,14 @@ This application will have 4 services:
 9. Docker
 10. Kubernetes
 
+## Getting Started
+Prerequisites: JDK 25 and Docker.
+
+```bash
+cp .env.dev.example .env.dev
+docker compose -f infra/docker-compose.yaml up -d --build
+curl localhost:8181/actuator/health
+```
+
+To run catalog-service from the IDE, make a copy of `.env.dev.example` as `.env.local`, adjust your values in it and load `.env.local` into the run configuration.
+

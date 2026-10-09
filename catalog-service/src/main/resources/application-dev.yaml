@@ -1,9 +1,1 @@
-spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5534/catalog_db
-    username: catalog_user
-    password: catalog-db
-  flyway:
-    enabled: true
-
 server.port: 8181

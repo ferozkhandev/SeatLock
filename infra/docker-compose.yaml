@@ -1,5 +1,19 @@
 name: seatlock
 services:
+  catalog-service:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+      args:
+        SERVICE: catalog-service
+    env_file:
+      - ../.env.dev
+    ports:
+      - "8181:8181"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
   postgres:
     image: postgres:16
     container_name: postgres
