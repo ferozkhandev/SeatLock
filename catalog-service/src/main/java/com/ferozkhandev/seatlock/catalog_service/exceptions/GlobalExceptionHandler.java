@@ -1,7 +1,8 @@
 package com.ferozkhandev.seatlock.catalog_service.exceptions;
 
 import com.ferozkhandev.seatlock.catalog_service.exceptions.event.EventNotFoundException;
-import com.ferozkhandev.seatlock.catalog_service.exceptions.event.VenueNotFoundException;
+import com.ferozkhandev.seatlock.catalog_service.exceptions.event.EventWrongSortKeyException;
+import com.ferozkhandev.seatlock.catalog_service.exceptions.venue.VenueNotFoundException;
 import com.ferozkhandev.seatlock.catalog_service.utils.ProblemPathsUtil;
 import org.jspecify.annotations.Nullable;
 import org.springframework.beans.TypeMismatchException;
@@ -118,6 +119,16 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
         problemDetail.setTitle("Internal Server Error");
         problemDetail.setType(URI.create(ProblemPathsUtil.INTERNAL_SERVER_ERROR));
         problemDetail.setProperty("code", "INTERNAL_SERVER_ERROR");
+        return problemDetail;
+    }
+
+    @ExceptionHandler(EventWrongSortKeyException.class)
+    public ProblemDetail handleEventWrongSortKeyException(EventWrongSortKeyException ex) {
+        ProblemDetail problemDetail = ProblemDetail.forStatusAndDetail(
+                HttpStatus.BAD_REQUEST, ex.getMessage());
+        problemDetail.setTitle("Invalid Sort Key");
+        problemDetail.setType(URI.create(ProblemPathsUtil.INVALID_SORT_KEY));
+        problemDetail.setProperty("code", "INVALID_SORT_KEY");
         return problemDetail;
     }
 }

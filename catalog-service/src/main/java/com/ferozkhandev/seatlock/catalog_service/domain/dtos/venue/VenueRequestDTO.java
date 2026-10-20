@@ -1,5 +1,6 @@
-package com.ferozkhandev.seatlock.catalog_service.domain.dtos;
+package com.ferozkhandev.seatlock.catalog_service.domain.dtos.venue;
 
+import com.ferozkhandev.seatlock.catalog_service.domain.dtos.venue_sections.VenueSectionsRequestDTO;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;

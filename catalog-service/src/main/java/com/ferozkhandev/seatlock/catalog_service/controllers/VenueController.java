@@ -1,7 +1,7 @@
 package com.ferozkhandev.seatlock.catalog_service.controllers;
 
-import com.ferozkhandev.seatlock.catalog_service.domain.dtos.VenueRequestDTO;
-import com.ferozkhandev.seatlock.catalog_service.domain.dtos.VenueResponseDTO;
+import com.ferozkhandev.seatlock.catalog_service.domain.dtos.venue.VenueRequestDTO;
+import com.ferozkhandev.seatlock.catalog_service.domain.dtos.venue.VenueResponseDTO;
 import com.ferozkhandev.seatlock.catalog_service.services.VenueService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;

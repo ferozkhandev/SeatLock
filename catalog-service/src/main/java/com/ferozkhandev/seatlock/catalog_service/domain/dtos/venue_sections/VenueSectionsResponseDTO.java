@@ -1,4 +1,4 @@
-package com.ferozkhandev.seatlock.catalog_service.domain.dtos;
+package com.ferozkhandev.seatlock.catalog_service.domain.dtos.venue_sections;
 
 import java.math.BigDecimal;
 

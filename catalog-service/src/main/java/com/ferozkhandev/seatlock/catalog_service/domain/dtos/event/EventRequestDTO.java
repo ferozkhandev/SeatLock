@@ -1,4 +1,4 @@
-package com.ferozkhandev.seatlock.catalog_service.domain.dtos;
+package com.ferozkhandev.seatlock.catalog_service.domain.dtos.event;
 
 import com.ferozkhandev.seatlock.catalog_service.annotations.ValidateEventTimes;
 import com.ferozkhandev.seatlock.catalog_service.domain.EventCategory;

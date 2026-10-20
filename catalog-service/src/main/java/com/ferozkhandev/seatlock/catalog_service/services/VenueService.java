@@ -1,8 +1,8 @@
 package com.ferozkhandev.seatlock.catalog_service.services;
 
 import com.ferozkhandev.seatlock.catalog_service.domain.Venue;
-import com.ferozkhandev.seatlock.catalog_service.domain.dtos.VenueRequestDTO;
-import com.ferozkhandev.seatlock.catalog_service.domain.dtos.VenueResponseDTO;
+import com.ferozkhandev.seatlock.catalog_service.domain.dtos.venue.VenueRequestDTO;
+import com.ferozkhandev.seatlock.catalog_service.domain.dtos.venue.VenueResponseDTO;
 import com.ferozkhandev.seatlock.catalog_service.repositories.VenueRepository;
 import com.ferozkhandev.seatlock.catalog_service.utils.VenueConversionUtil;
 import org.springframework.stereotype.Service;

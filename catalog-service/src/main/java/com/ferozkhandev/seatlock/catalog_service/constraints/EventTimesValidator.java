@@ -1,7 +1,7 @@
 package com.ferozkhandev.seatlock.catalog_service.constraints;
 
 import com.ferozkhandev.seatlock.catalog_service.annotations.ValidateEventTimes;
-import com.ferozkhandev.seatlock.catalog_service.domain.dtos.EventRequestDTO;
+import com.ferozkhandev.seatlock.catalog_service.domain.dtos.event.EventRequestDTO;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 

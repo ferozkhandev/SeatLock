@@ -1,4 +1,4 @@
-package com.ferozkhandev.seatlock.catalog_service.exceptions.event;
+package com.ferozkhandev.seatlock.catalog_service.exceptions.venue;
 
 import java.util.UUID;
 

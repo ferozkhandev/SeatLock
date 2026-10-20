@@ -1,8 +1,10 @@
 package com.ferozkhandev.seatlock.catalog_service.utils;
 
 import com.ferozkhandev.seatlock.catalog_service.domain.Event;
-import com.ferozkhandev.seatlock.catalog_service.domain.dtos.EventRequestDTO;
-import com.ferozkhandev.seatlock.catalog_service.domain.dtos.EventResponseDTO;
+import com.ferozkhandev.seatlock.catalog_service.domain.Venue;
+import com.ferozkhandev.seatlock.catalog_service.domain.dtos.event.EventRequestDTO;
+import com.ferozkhandev.seatlock.catalog_service.domain.dtos.event.EventResponseDTO;
+import com.ferozkhandev.seatlock.catalog_service.domain.dtos.event.EventSummary;
 
 import java.util.Objects;
 
@@ -40,6 +42,25 @@ public final class EventConversionUtil {
                 event.getStatus().name(),
                 event.getPosterKey(),
                 VenueConversionUtil.toResponseDTO(event.getVenue())
+        );
+    }
+
+    public static EventSummary toSummary(Event event) {
+        Objects.requireNonNull(event, "Event must not be null");
+
+        Venue venue = Objects.requireNonNull(event.getVenue(), "Venue must not be null");
+
+        return new EventSummary(
+                event.getId().toString(),
+                event.getName(),
+                event.getCategory().name(),
+                event.getStartsAt().toString(),
+                event.getEndsAt().toString(),
+                event.getBasePrice(),
+                event.getPosterKey(),
+                Objects.requireNonNull(venue.getId(), "Venue ID must not be null").toString(),
+                venue.getName(),
+                venue.getCity()
         );
     }
 }

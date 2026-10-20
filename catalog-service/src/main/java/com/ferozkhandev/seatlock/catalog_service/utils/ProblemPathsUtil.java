@@ -14,4 +14,5 @@ public final class ProblemPathsUtil {
     public static final String MISSING_REQUEST_HEADER = PROBLEM_PATH + "/missing-request-header";
     public static final String INVALID_ARGUMENT_TYPE = PROBLEM_PATH + "/invalid-argument-type";
     public static final String INTERNAL_SERVER_ERROR = PROBLEM_PATH + "/internal-server-error";
+    public static final String INVALID_SORT_KEY = PROBLEM_PATH + "/invalid-sort-key";
 }

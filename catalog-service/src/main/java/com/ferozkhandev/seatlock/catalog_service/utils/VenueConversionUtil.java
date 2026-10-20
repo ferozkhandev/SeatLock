@@ -2,10 +2,10 @@ package com.ferozkhandev.seatlock.catalog_service.utils;
 
 import com.ferozkhandev.seatlock.catalog_service.domain.Venue;
 import com.ferozkhandev.seatlock.catalog_service.domain.VenueSection;
-import com.ferozkhandev.seatlock.catalog_service.domain.dtos.VenueRequestDTO;
-import com.ferozkhandev.seatlock.catalog_service.domain.dtos.VenueResponseDTO;
-import com.ferozkhandev.seatlock.catalog_service.domain.dtos.VenueSectionsRequestDTO;
-import com.ferozkhandev.seatlock.catalog_service.domain.dtos.VenueSectionsResponseDTO;
+import com.ferozkhandev.seatlock.catalog_service.domain.dtos.venue.VenueRequestDTO;
+import com.ferozkhandev.seatlock.catalog_service.domain.dtos.venue.VenueResponseDTO;
+import com.ferozkhandev.seatlock.catalog_service.domain.dtos.venue_sections.VenueSectionsRequestDTO;
+import com.ferozkhandev.seatlock.catalog_service.domain.dtos.venue_sections.VenueSectionsResponseDTO;
 
 import java.util.Objects;
 
